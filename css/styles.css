@@ -1,0 +1,219 @@
+:root {
+  --colour-dark-grey: #1f2937;
+  --colour-white: #f9faf8;
+  --colour-light-grey: #e5e7eb;
+  --colour-mid-blue: #3882f6;
+  --base-font-size: 1em;
+}
+
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  /*@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Italic.woff2') format('woff2'),
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}*/
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}  */
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, Helvetica, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  /*font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;*/
+}
+
+.wrapper {
+    flex: 1;
+    /*border: 1px dashed black;*/
+}
+
+header {
+    background: var(--colour-dark-grey);
+    color: var(--colour-white);
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+
+nav {
+}
+
+main {
+    /*border: 1px dotted rosybrown;*/
+}
+
+.hero {
+    background: var(--colour-dark-grey);
+    color: var(--colour-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+    gap: 5em;
+}
+
+.hero-wrapper {
+    /*border: 1px solid yellow;*/
+    display: flex;
+    width: 80%;
+}
+
+.icons {
+    text-align: center;
+    padding: 3em;
+}
+
+.icons-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.icon-wrapper {
+    /*border: 1px solid red;*/
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-wrapper {
+  width: 15%;
+}
+
+.icon-wrapper img {
+    border: 3px solid var(--colour-mid-blue);
+    border-radius: 1em;  
+}
+
+
+.testimonials {
+    background: var(--colour-light-grey);
+    padding: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-wrapper {
+    width: 70%;
+    /*border: 1px solid red;*/
+}
+
+cite {
+    text-align: right;
+    font-style: normal;
+    display: block;
+}
+
+.cta {
+    /*border: 1px solid purple;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5em;
+}
+
+.modal {
+    background-color: var(--colour-mid-blue);
+    color: var(--colour-white);
+    padding: 2em 4em;
+    border-radius: 1em;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-text {
+    /*display: flex;*/
+}
+
+.modal button {
+    border: 1px solid var(--colour-white);
+}
+
+footer {
+    background: whitesmoke;
+    background: var(--colour-dark-grey);
+    color: var(--colour-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1em;
+}
+
+button {
+    background-color: var(--colour-mid-blue);
+    color: var(--colour-white);
+    padding: .5em 1em;
+    border-radius: .5em;
+    border: none;
+    font-size: calc(var(--base-font-size) * 1.1);
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: calc(var(--base-font-size) * 2.25);
+    font-weight: 900;
+    color: var(--colour-dark-grey);
+}
+
+header p {
+    font-weight: bold;
+    font-size: calc(var(--base-font-size) * 1.2);
+}
+
+.hero-text p, nav {
+    font-size: calc(var(--base-font-size) * 1.1);
+    color: var(--colour-light-grey);
+}
+
+.testimonials blockquote {
+    font-size: calc(var(--base-font-size) * 2.25);
+    color: var(--colour-dark-grey);
+    font-style: italic;
+    font-weight: light;
+}
+
+.bolder {
+    font-weight: bold;
+}
